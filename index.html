@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammed Yunus Khan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Mohammed Yunus Khan</h1>
+    <p>BCA Student | Aspiring DevOps & Cloud Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="scroll-down">⬇️</div>
+  </header>
+
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>I’m a passionate BCA student interested in cloud computing, DevOps, and modern web technologies. I'm building projects that combine creativity with clean code and love solving problems in tech.</p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>C, C++, Java</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React (Basics), Firebase</li>
+      <li>Git & GitHub, Android Studio</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>LIQAA – Social Media App</strong> – React + Firebase based app with login, post, and chat</li>
+      <li><strong>Movie Recommendation System</strong> – ML-based project to suggest movies</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-left">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:mohammedyunuskhan49@gmail.com">mohammedyunuskhan49@gmail.com</a></p>
+    <p>📱 Phone: +91 7204618343</p>
+    <p>💼 LinkedIn: <a href="https://linkedin.com/in/mohammed-yunus-khan-01a8842ab" target="_blank">Visit My Profile</a></p>
+  </section>
+
+  <button class="top-btn" onclick="scrollToTop()">⬆️</button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const topBtn = document.querySelector(".top-btn");
+    window.onscroll = () => {
+      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
